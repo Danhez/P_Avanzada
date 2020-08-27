@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador</title>
+    <meta name="Buscador" content="width=device-width">
+    <link href="{{ url_for('static',filename='styles/index.css') }}" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="center">
+        <form id="search" name="search" method="POST">
+          <label for="buscar">Usuario:</label><br>
+          <input type="text" id="buscar" name="buscar"><br>
+        </form>
+        <button type="submit" form="search" formaction="/"> Buscar </button>
+        <a href="/show/users"><button type="button">Todos</button></a>
+    </div>
+</body>
+</html>
